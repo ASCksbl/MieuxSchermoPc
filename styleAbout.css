@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #5941c2 40%, #9179FA 100%);
+    height: 10vh;
+}
+
+.nav_title {
+    color: #fff;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+    margin-right: 10vh;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #9179FA;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+nav .fa {
+    display: none;
+}
+
+main {
+    width: 100%;
+    background: rgb(35, 32, 39);
+}
+
+.about {
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    position: relative;
+    background-image: url(backgroundabout3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px;
+}
+
+.contact {
+    text-align: left;
+    justify-content: center;
+
+}
+
+h2 {
+    text-align: left;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #5941c2;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+}
+
+.about h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #5941c2;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+footer h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px;
+    color: #fff;
+}
+
+footer {
+    background: rgb(35, 32, 39);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer h1,
+p {
+    color: white;
+    padding: 20px;
+}
+
+/* Media for cel*/
+@media (max-width: 700px) {
+    .nav_title {
+        font-size: 16px;
+    }
+
+    .nav-links ul li a {
+        font-size: 15px;
+    }
+}
